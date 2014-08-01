@@ -8,6 +8,7 @@ links.forEach(function(link) {
   link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
 });
 
+
 var width = 960,
     height = 960;
 
@@ -15,8 +16,8 @@ var force = d3.layout.force()
     .nodes(d3.values(nodes))
     .links(links)
     .size([window.innerWidth, window.innerHeight])
-    .linkDistance(60)
-    .charge(-300)
+    .linkDistance(300)
+    .charge(-500)
     .on("tick", tick)
     .start();
 
