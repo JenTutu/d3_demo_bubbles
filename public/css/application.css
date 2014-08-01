@@ -8,15 +8,15 @@ body {
   stroke-width: 1.5px;
 }
 
-#licensing {
-  fill: green;
+.link.week1 {
+  stroke: blue;
 }
 
 .link.week2 {
   stroke: green;
 }
 
-.link.week1 {
+.link.week3 {
   stroke: red;
 }
 
