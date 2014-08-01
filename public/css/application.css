@@ -1,5 +1,6 @@
 body {
-  background: #ACEBEB;
+  background: url("../img/rose.jpg") no-repeat;
+  background-size: 100%;
 }
 
 .link {
@@ -13,15 +14,25 @@ body {
 }
 
 .link.week2 {
-  stroke: green;
+  stroke: #006600;
 }
 
 .link.week3 {
-  stroke: red;
+  stroke: #FF0000;
+}
+
+.link.instructors {
+  stroke: #FF0066;
 }
 
 .link.resolved {
   stroke-dasharray: 0,2 1;
+  stroke: blue;
+}
+
+.link.resolved2 {
+  stroke-dasharray: 0,2 1;
+  stroke: #666633;
 }
 
 circle {
@@ -31,7 +42,7 @@ circle {
 }
 
 text {
-  font: 10px sans-serif;
+  font: 18px sans-serif;
   pointer-events: none;
   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
 }
