@@ -42,8 +42,7 @@ svg.append("defs").selectAll("marker")
 var path = svg.append("g").selectAll("path")
     .data(force.links())
   .enter().append("path")
-    .attr("class", function(d) { return "link " + d.type; })
-    .attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
+    .attr("class", function(d) { return "link " + d.type; });
 
 var circle = svg.append("g").selectAll("circle")
     .data(force.nodes())
